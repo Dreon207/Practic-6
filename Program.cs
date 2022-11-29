@@ -8,8 +8,9 @@ namespace ConsoleApp3
     internal class Program
     {
         static void Main(string[] args)
-        {
-
+        { 
+           //  Console.Write($"Введите путь файла:");
+           // string path = Console.ReadLine();
             string path = @"C:\intel\1.txt"; 
            
             Console.WriteLine(path);
