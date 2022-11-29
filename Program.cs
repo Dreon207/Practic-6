@@ -43,19 +43,23 @@ namespace ConsoleApp3
                 string json = JsonConvert.SerializeObject(books);
                 File.WriteAllText(path, json);
                 List<book> result;
+                string text = File.ReadAllText(path);
+                List <book> resulte = JsonConvert.DeserializeObject<List<book>>(text);
+
+
             }
             else
             {
                 XmlSerializer xml = new XmlSerializer(typeof(book));
                 using (FileStream f = new FileStream(path, FileMode.OpenOrCreate))
-
                     xml.Serialize(f, book1);
 
+                book bok;
+                XmlSerializer xmle = new XmlSerializer(typeof(book));
+                using (FileStream f = new FileStream(path, FileMode.Open))
+                  bok = (book)xml.Deserialize(f,);
                 {
-                    case ConsoleKey.Escape:
-                            Environment.Exit(0);
-                            break;
-                    }
+                    
 
                 }
 
