@@ -12,8 +12,6 @@ namespace ConsoleApp3
 
             string path = @"C:\intel\1.txt"; 
            
-              //  Console.Write($"Введите путь файла:");
-           // string path = Console.ReadLine();
             Console.WriteLine(path);
             if (File.Exists(path))
             {
