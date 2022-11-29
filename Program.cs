@@ -57,7 +57,7 @@ namespace ConsoleApp3
                 book bok;
                 XmlSerializer xmle = new XmlSerializer(typeof(book));
                 using (FileStream f = new FileStream(path, FileMode.Open))
-                  bok = (book)xml.Deserialize(f,);
+                  bok = (book)xml.Deserialize(f);
                 switch (Console.ReadKey().Key)
                 {
                case ConsoleKey.Escape:
