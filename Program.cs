@@ -52,6 +52,10 @@ namespace ConsoleApp3
                     xml.Serialize(f, book1);
 
                 {
+                    case ConsoleKey.Escape:
+                            Environment.Exit(0);
+                            break;
+                    }
 
                 }
 
