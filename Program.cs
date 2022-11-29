@@ -61,6 +61,7 @@ namespace ConsoleApp3
                   bok = (book)xml.Deserialize(f);
                 switch (Console.ReadKey().Key)
                 {
+               Console.Write("Нажмите Escape для выхода:");
                case ConsoleKey.Escape:
                Environment.Exit(0);
                break;
